@@ -1,0 +1,42 @@
+//  Kick your rating's
+//  I'm love with code
+//  Nuruzzaman Islam
+
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+#define nline '\n'
+#define debug(x) cout<<#x<<' '<<x<<endl
+#define rep(x) for (int i=0;i<x;++i)
+void solve(){
+	int n,p;cin>>n>>p;
+	set<int>s;
+	rep(p){
+		int tmp;cin>>tmp;
+		s.insert(tmp);
+	}
+
+	int q;cin>>q;
+	rep(q){
+		int tmp;cin>>tmp;
+		s.insert(tmp);
+	}
+
+	cout<<((s.size()==n)?"I become the guy.": "Oh, my keyboard!")<<nline;
+
+
+}
+
+
+int main(int argc, char const *argv[]){
+	
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
+
+	solve();
+
+	return 0;
+}
