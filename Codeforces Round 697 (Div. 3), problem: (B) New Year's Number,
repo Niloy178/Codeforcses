@@ -1,0 +1,28 @@
+#include "bits/stdc++.h"
+using namespace std;
+
+typedef long long ll;
+
+#define PI acos(-1)
+#define DBG(n) cout<<#n<<" "<<" => "<<n<<endl;
+bool tc=1,fin=0;
+
+void solve(){
+    int n;
+    scanf("%d",&n);
+    while(n>0){
+        if(n%2020==0 or n%2021==0){
+            printf("YES\n");
+            return;
+        }
+        n-=2021;
+    }
+    printf("NO\n");
+}
+
+int main() {
+    ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+    if(fin){freopen("input.txt","r",stdin);}
+    if(tc){int n;scanf("%d",&n);while(n--){solve();}}else{solve();}
+    return 0;
+}
