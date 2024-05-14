@@ -1,0 +1,79 @@
+// ----MD.NURUZZAMAN ISLAM------//
+// Toph --> www.toph.co/u/Neloy754
+// Codeforces --> codeforces.com/
+//My blog-> www.neloy754.blogspot.com
+
+// Header files are here
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <stack>
+#include <queue>
+#include <algorithm>
+#include <iterator>
+#include <array>
+#include <string>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include <utility>
+using namespace std;
+
+// Main function at bottom
+
+// Macro are here
+typedef long long ll;
+typedef signed sn;
+typedef void vd;
+
+#define vctr vector<ll>
+#define PI acos(-1)
+#define rep(n) for(int i = 0;i < n; ++i)
+#define mrepn(m, n) for(int i = m;i < n; ++i)
+#define pnt(n) cout << n << endl;
+#define sh cout << endl;
+#define in(n) cin >> n;
+#define pb(n) push_back(n);
+#define inf 1e9
+
+
+vd seive(vctr &v,int n) {
+    for(int i = 2; i*i <= n; ++i) {
+        if(n%i == 0) {
+            v.pb(i);
+            if(n/i != i) v.pb(n/i);
+        }
+    }
+    v.pb(n);
+}
+
+
+
+vd solve() {
+
+    int n;    
+    in(n);
+    
+    rep(n) {
+        cout << 1;
+        if(i != n-1) cout << ' ';
+    }
+    sh;
+    
+}
+
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int n;
+    in(n);
+    while(n--) solve();
+
+    return 0;
+}
+
+    
